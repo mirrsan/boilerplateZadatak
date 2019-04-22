@@ -1,0 +1,8 @@
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Core\bin\Debug\netcoreapp2.1\BoilerplateZadatak.Core.deps.json
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Core\bin\Debug\netcoreapp2.1\BoilerplateZadatak.Core.dll
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Core\bin\Debug\netcoreapp2.1\BoilerplateZadatak.Core.pdb
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Core\obj\Debug\netcoreapp2.1\BoilerplateZadatak.Core.csproj.CoreCompileInputs.cache
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Core\obj\Debug\netcoreapp2.1\BoilerplateZadatak.Core.AssemblyInfoInputs.cache
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Core\obj\Debug\netcoreapp2.1\BoilerplateZadatak.Core.AssemblyInfo.cs
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Core\obj\Debug\netcoreapp2.1\BoilerplateZadatak.Core.dll
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Core\obj\Debug\netcoreapp2.1\BoilerplateZadatak.Core.pdb

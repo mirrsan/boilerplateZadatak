@@ -1,0 +1,16 @@
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.EntityFrameworkCore\bin\Debug\netcoreapp2.1\BoilerplateZadatak.EntityFrameworkCore.dll.config
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.EntityFrameworkCore\bin\Debug\netcoreapp2.1\BoilerplateZadatak.EntityFrameworkCore.deps.json
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.EntityFrameworkCore\bin\Debug\netcoreapp2.1\BoilerplateZadatak.EntityFrameworkCore.runtimeconfig.json
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.EntityFrameworkCore\bin\Debug\netcoreapp2.1\BoilerplateZadatak.EntityFrameworkCore.runtimeconfig.dev.json
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.EntityFrameworkCore\bin\Debug\netcoreapp2.1\BoilerplateZadatak.EntityFrameworkCore.dll
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.EntityFrameworkCore\bin\Debug\netcoreapp2.1\BoilerplateZadatak.EntityFrameworkCore.pdb
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.EntityFrameworkCore\bin\Debug\netcoreapp2.1\BoilerplateZadatak.Core.dll
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.EntityFrameworkCore\bin\Debug\netcoreapp2.1\BoilerplateZadatak.Core.pdb
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.EntityFrameworkCore\obj\Debug\netcoreapp2.1\BoilerplateZadatak.EntityFrameworkCore.csprojAssemblyReference.cache
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.EntityFrameworkCore\obj\Debug\netcoreapp2.1\BoilerplateZadatak.EntityFrameworkCore.dll.config
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.EntityFrameworkCore\obj\Debug\netcoreapp2.1\BoilerplateZadatak.EntityFrameworkCore.csproj.CoreCompileInputs.cache
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.EntityFrameworkCore\obj\Debug\netcoreapp2.1\BoilerplateZadatak.EntityFrameworkCore.AssemblyInfoInputs.cache
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.EntityFrameworkCore\obj\Debug\netcoreapp2.1\BoilerplateZadatak.EntityFrameworkCore.AssemblyInfo.cs
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.EntityFrameworkCore\obj\Debug\netcoreapp2.1\BoilerplateZadatak.EntityFrameworkCore.csproj.CopyComplete
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.EntityFrameworkCore\obj\Debug\netcoreapp2.1\BoilerplateZadatak.EntityFrameworkCore.dll
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.EntityFrameworkCore\obj\Debug\netcoreapp2.1\BoilerplateZadatak.EntityFrameworkCore.pdb

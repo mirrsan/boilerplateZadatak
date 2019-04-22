@@ -1,0 +1,12 @@
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Application\bin\Debug\netcoreapp2.1\BoilerplateZadatak.Application.deps.json
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Application\bin\Debug\netcoreapp2.1\BoilerplateZadatak.Application.dll
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Application\bin\Debug\netcoreapp2.1\BoilerplateZadatak.Application.pdb
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Application\bin\Debug\netcoreapp2.1\BoilerplateZadatak.Core.dll
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Application\bin\Debug\netcoreapp2.1\BoilerplateZadatak.Core.pdb
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Application\obj\Debug\netcoreapp2.1\BoilerplateZadatak.Application.csprojAssemblyReference.cache
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Application\obj\Debug\netcoreapp2.1\BoilerplateZadatak.Application.csproj.CoreCompileInputs.cache
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Application\obj\Debug\netcoreapp2.1\BoilerplateZadatak.Application.AssemblyInfoInputs.cache
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Application\obj\Debug\netcoreapp2.1\BoilerplateZadatak.Application.AssemblyInfo.cs
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Application\obj\Debug\netcoreapp2.1\BoilerplateZadatak.Application.csproj.CopyComplete
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Application\obj\Debug\netcoreapp2.1\BoilerplateZadatak.Application.dll
+C:\VS_project\BoilerplateZadatak\4.0.0\src\BoilerplateZadatak.Application\obj\Debug\netcoreapp2.1\BoilerplateZadatak.Application.pdb
