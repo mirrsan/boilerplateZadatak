@@ -18,7 +18,7 @@ namespace BoilerplateZadatak.Web.Views.Shared.Components.LanguageSelection
             var model = new LanguageSelectionViewModel
             {
                 CurrentLanguage = _languageManager.CurrentLanguage,
-                Languages = _languageManager.GetLanguages(),
+                Languages = _languageManager .GetLanguages(),
                 CurrentUrl = Request.Path
             };
 

@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "ObrisiOU";
+}
+
+<script>
+    function VratiMe() {
+        window.history.back();
+    }
+</script>
+
+<h3>Obrisi Osoba-Uredjaj?</h3>
+
+<br />
+
+<form method="post">
+    <p>Sigurni ste da zelite da obrisete!?</p>
+    <br />
+    <button type="submit" class="btn btn-danger">Da</button>
+</form>
+<button onclick="VratiMe()" class="btn btn-primary">Ne</button>
+

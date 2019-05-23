@@ -1,11 +1,12 @@
-﻿using BoilerplateZadatak.AppService.Dto;
+﻿using System.Linq;
+using BoilerplateZadatak.AppService.Dto;
 using Microsoft.AspNetCore.Mvc;
 using BoilerplateZadatak.AppService.IAppService;
+using BoilerplateZadatak.Web.Dto;
 
 namespace BoilerplateZadatak.Web.Controllers
 {
-    [Route("api/[controller]/[action]")]
-    public class KancelarijaController : Controller
+    public class KancelarijaController : BoilerplateZadatakControllerBase
     {
         private readonly IKancelarijaService _kancelarijaService;
 
@@ -13,16 +14,11 @@ namespace BoilerplateZadatak.Web.Controllers
         {
             _kancelarijaService = kancelarijaService;
         }
-        
-        /// <summary>
-        /// vraca sve kancelarije
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        public IActionResult SveKancelarije()
+
+        public IActionResult Index()
         {
-            var sve = _kancelarijaService.DajSveEntitete();
-            return Ok(sve);
+            var model = new KancelarijaModelDto(_kancelarijaService);
+            return View(model);
         }
 
         /// <summary>
@@ -30,11 +26,16 @@ namespace BoilerplateZadatak.Web.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpGet("{id}")]
+        [HttpGet]
         public IActionResult KancelarijaPoId(int id)
         {
             var kancelarija = _kancelarijaService.EntitetPoId(id);
-            return Ok(kancelarija);
+            return View(kancelarija);
+        }
+
+        public IActionResult NovaKancelarija()
+        {
+            return View();
         }
 
         /// <summary>
@@ -45,8 +46,13 @@ namespace BoilerplateZadatak.Web.Controllers
         [HttpPost]
         public IActionResult NovaKancelarija(KancelarijaDto novaKancelarija)
         {
-            int id = _kancelarijaService.DodajEntitet(novaKancelarija);
-            return Ok($"{novaKancelarija.Opis} ima ID = {id}");
+            _kancelarijaService.DodajEntitet(novaKancelarija);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult IzmeniInfoKancelarije()
+        {
+            return View();
         }
 
         /// <summary>
@@ -55,11 +61,16 @@ namespace BoilerplateZadatak.Web.Controllers
         /// <param name="id"></param>
         /// <param name="noviInfo"></param>
         /// <returns></returns>
-        [HttpPut]
+        [HttpPost]
         public IActionResult IzmeniInfoKancelarije(KancelarijaDto noviInfo)
         {
             _kancelarijaService.IzmeniEntitet(noviInfo);
-            return Ok("Izmenili ste izmene, svaka cass");
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult ObrisiKancelariju()
+        {
+            return View();
         }
 
         /// <summary>
@@ -67,11 +78,11 @@ namespace BoilerplateZadatak.Web.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpDelete("{id}")]
+        [HttpPost]
         public IActionResult ObrisiKancelariju(int id)
         {
             _kancelarijaService.ObrisiEntitet(id);
-            return Ok("Obrisana je");
+            return RedirectToAction("Index");
         }
     }
 }

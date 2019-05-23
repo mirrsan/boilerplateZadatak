@@ -4,12 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using BoilerplateZadatak.AppService.Dto;
 using BoilerplateZadatak.AppService.IAppService;
+using BoilerplateZadatak.Web.Dto;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BoilerplateZadatak.Web.Controllers
 {
-    [Route("api/[controller]/[action]")]
-    public class OsobaUredjajController : Controller
+    public class OsobaUredjajController : BoilerplateZadatakControllerBase
     {
         private readonly IOsobaUredjajService _osobaUredjajService;
 
@@ -18,15 +18,10 @@ namespace BoilerplateZadatak.Web.Controllers
             _osobaUredjajService = osobaUredjajService;
         }
 
-        /// <summary>
-        /// vraca sve entitete OsobaUredjaj
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        public IActionResult SveOU()
+        public IActionResult Index()
         {
-            var svi = _osobaUredjajService.DajSveEntitete();
-            return Ok(svi);
+            var model = new OsobaUredjajModelDto(_osobaUredjajService);
+            return View(model);
         }
 
         /// <summary>
@@ -34,11 +29,16 @@ namespace BoilerplateZadatak.Web.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpGet("{id}")]
-        public IActionResult OuPoId(int id)
+        [HttpGet]
+        public IActionResult OuPoId(int? id)
         {
-            var osobaUredjaj = _osobaUredjajService.EntitetPoId(id);
-            return Ok(osobaUredjaj);
+            var osobaUredjaj = _osobaUredjajService.EntitetPoId(id.Value);
+            return View(osobaUredjaj);
+        }
+
+        public IActionResult NoviOsobaUredjaj()
+        {
+            return View();
         }
 
         /// <summary>
@@ -50,7 +50,12 @@ namespace BoilerplateZadatak.Web.Controllers
         public IActionResult NoviOsobaUredjaj(OsobaUredjajDto noviOU)
         {
             int id = _osobaUredjajService.DodajEntitet(noviOU);
-            return Ok($"Id upisanog entiteta je {id}");
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult IzmenaInfoOU()
+        {
+            return View();
         }
 
         /// <summary>
@@ -59,11 +64,16 @@ namespace BoilerplateZadatak.Web.Controllers
         /// <param name="id"></param>
         /// <param name="noviInfo"></param>
         /// <returns></returns>
-        [HttpPut]
+        [HttpPost]
         public IActionResult IzmenaInfoOU(OsobaUredjajDto noviInfo)
         {
             _osobaUredjajService.IzmeniEntitet(noviInfo);
-            return Ok("Izmenjeno");
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult ObrisiOU()
+        {
+            return View();
         }
 
         /// <summary>
@@ -71,11 +81,11 @@ namespace BoilerplateZadatak.Web.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpDelete("{id}")]
+        [HttpPost]
         public IActionResult ObrisiOU(int id)
         {
             _osobaUredjajService.ObrisiEntitet(id);
-            return Ok("Obrisano");
+            return RedirectToAction("Index");
         }
     }
 }

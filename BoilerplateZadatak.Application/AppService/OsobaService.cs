@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Abp.Collections.Extensions;
+﻿using System.Collections.Generic;
 using Abp.Domain.Repositories;
 using Abp.UI;
 using BoilerplateZadatak.AppService.Dto;
@@ -43,7 +40,6 @@ namespace BoilerplateZadatak.AppService
                     return osobaDto;
                 }
             }
-
             throw new UserFriendlyException("Nema sa tim ID");
         }
 

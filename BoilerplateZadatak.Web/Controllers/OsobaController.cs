@@ -1,11 +1,11 @@
 ﻿using BoilerplateZadatak.AppService.Dto;
 using BoilerplateZadatak.AppService.IAppService;
+using BoilerplateZadatak.Web.Dto;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BoilerplateZadatak.Web.Controllers
 {
-    [Route("api/[controller]/[action]")]
-    public class OsobaController : Controller
+    public class OsobaController : BoilerplateZadatakControllerBase
     {
         private readonly IOsobaService _osobaService;
 
@@ -14,15 +14,10 @@ namespace BoilerplateZadatak.Web.Controllers
             _osobaService = osobaService;
         }
 
-        /// <summary>
-        /// vraca sve osobe
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        public IActionResult SveOsobe()
+        public IActionResult Index()
         {
-            var svi = _osobaService.DajSveEntitete();
-            return Ok(svi);
+            var model = new OsobaModelDto(_osobaService);
+            return View(model);
         }
 
         /// <summary>
@@ -30,11 +25,16 @@ namespace BoilerplateZadatak.Web.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpGet("{id}")]
+        [HttpGet]
         public IActionResult OsobaPoId(int id)
         {
             var osoba = _osobaService.EntitetPoId(id);
-            return Ok(osoba);
+            return View(osoba);
+        }
+
+        public IActionResult NovaOsoba()
+        {
+            return View();
         }
 
         /// <summary>
@@ -45,8 +45,13 @@ namespace BoilerplateZadatak.Web.Controllers
         [HttpPost]
         public IActionResult NovaOsoba(OsobaDto novaOsoba)
         {
-            int id = _osobaService.DodajEntitet(novaOsoba);
-            return Ok($"Id {novaOsoba.Ime}-{novaOsoba.Prezime} je {id}");
+            _osobaService.DodajEntitet(novaOsoba);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult IzmenaInfoOsobe()
+        {
+            return View();
         }
 
         /// <summary>
@@ -55,11 +60,16 @@ namespace BoilerplateZadatak.Web.Controllers
         /// <param name="id"></param>
         /// <param name="noviInfo"></param>
         /// <returns></returns>
-        [HttpPut]
+        [HttpPost]
         public IActionResult IzmenaInfoOsobe(OsobaDto noviInfo)
         {
             _osobaService.IzmeniEntitet(noviInfo);
-            return Ok("Izmenjeno");
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult ObrisiOsobu()
+        {
+            return View();
         }
 
         /// <summary>
@@ -67,11 +77,11 @@ namespace BoilerplateZadatak.Web.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpDelete("{id}:int")]
+        [HttpPost]
         public IActionResult ObrisiOsobu(int id)
         {
             _osobaService.ObrisiEntitet(id);
-            return Ok("Obrisano!");
+            return RedirectToAction("Index");
         }
     }
 }

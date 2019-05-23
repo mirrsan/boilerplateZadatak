@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "IzmenaInfoOU";
+}
+
+<h3>Izmeni info Osoba-Uredjaj</h3>
+
+<hr />
+
+<form method="post">
+    <h6>Osoba:</h6>
+    <div class="form-group">
+        <input type="text" name="Osoba.Ime" placeholder="Ime osobe.." /><br /><br />
+        <input type="text" name="Osoba.Prezime" placeholder="Prezime osobe.." /><br /><br />
+        <input type="text" name="Osoba.Kancelarija.Opis" placeholder="Opis kancelarije.." />
+    </div>
+    <h6>Uredjaj:</h6>
+    <div class="form-group">
+        <input type="text" name="Uredjaj.Naziv" placeholder="Naziv novog uredjaj-a.." />
+    </div>
+    <h6>Vreme koriscenja:</h6>
+    <div class="form-group">
+        Od:<input type="date" name="PocetakKoriscenja" />
+        Do:<input type="date" name="KrajKoriscenja" />
+    </div>
+    <button type="submit" class="btn btn-primary">Dodaj</button>
+</form>

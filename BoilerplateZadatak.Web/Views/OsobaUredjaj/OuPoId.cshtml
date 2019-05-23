@@ -1,0 +1,23 @@
+﻿@model BoilerplateZadatak.AppService.Dto.OsobaUredjajDto
+@{
+    ViewData["Title"] = "OuPoId";
+}
+
+<h3>Detalji</h3>
+
+<h5>ID:@Model.Id</h5>
+
+<h5>
+    ID osobe:@Model.Osoba.Id <br/>
+    Ime:@Model.Osoba.Ime <br/>
+    Prezime:@Model.Osoba.Prezime <br/>
+    ID kancelarije:@Model.Osoba.Kancelarija.Id <br/>
+    Kancelarija:@Model.Osoba.Kancelarija.Opis
+</h5>
+
+<h5>
+    ID uredjaj-a: @Model.Uredjaj.Id <br/>
+    Uredjaj:@Model.Uredjaj.Naziv
+</h5>
+
+<h5>Od:@Model.PocetakKoriscenja <br />Do:@Model.KrajKoriscenja</h5>

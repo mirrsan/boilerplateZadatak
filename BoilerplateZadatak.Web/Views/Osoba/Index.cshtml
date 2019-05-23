@@ -1,0 +1,16 @@
+﻿@model BoilerplateZadatak.Web.Dto.OsobaModelDto
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3>Osobe</h3>
+
+<hr />
+
+@foreach (var osoba in Model.Osobe)
+{
+    <h5>Ime:@osoba.Ime <br />Prezime:@osoba.Prezime <br /> Kancelarija:@osoba.Kancelarija.Opis</h5>
+    @Html.ActionLink("Obrisi ", "ObrisiOsobu", new { Id = osoba.Id }) 
+    @Html.ActionLink(" Izmeni ", "IzmenaInfoOsobe", new { Id = osoba.Id })
+    @Html.ActionLink(" Detalji", "OsobaPoId", new {Id = osoba.Id})
+}

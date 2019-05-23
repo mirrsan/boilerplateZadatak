@@ -1,22 +1,22 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "0d2abd83411c7f45db3d1eff41c631b253315bac"
+    "signature": "f320761b38ad1f1c77a703facd14beffa44cfe60"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "BoilerplateZadatak.Application/1.0.0.0": {
         "dependencies": {
-          "Abp.AutoMapper": "4.3.0",
-          "Abp.EntityFrameworkCore": "4.3.0",
+          "Abp.AutoMapper": "4.5.0",
+          "Abp.EntityFrameworkCore": "4.5.0",
           "BoilerplateZadatak.Core": "1.0.0"
         },
         "runtime": {
           "BoilerplateZadatak.Application.dll": {}
         }
       },
-      "Abp/4.3.0": {
+      "Abp/4.5.0": {
         "dependencies": {
           "Castle.Core": "4.3.1",
           "Castle.LoggingFacility": "4.1.1",
@@ -40,45 +40,45 @@
         },
         "runtime": {
           "lib/netstandard2.0/Abp.dll": {
-            "assemblyVersion": "4.3.0.0",
-            "fileVersion": "4.3.0.0"
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.5.0.0"
           }
         }
       },
-      "Abp.AutoMapper/4.3.0": {
+      "Abp.AutoMapper/4.5.0": {
         "dependencies": {
-          "Abp": "4.3.0",
+          "Abp": "4.5.0",
           "AutoMapper": "8.0.0",
           "AutoMapper.Collection": "5.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/Abp.AutoMapper.dll": {
-            "assemblyVersion": "4.3.0.0",
-            "fileVersion": "4.3.0.0"
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.5.0.0"
           }
         }
       },
-      "Abp.EntityFramework.Common/4.3.0": {
+      "Abp.EntityFramework.Common/4.5.0": {
         "dependencies": {
-          "Abp": "4.3.0"
+          "Abp": "4.5.0"
         },
         "runtime": {
           "lib/netstandard2.0/Abp.EntityFramework.Common.dll": {
-            "assemblyVersion": "4.3.0.0",
-            "fileVersion": "4.3.0.0"
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.5.0.0"
           }
         }
       },
-      "Abp.EntityFrameworkCore/4.3.0": {
+      "Abp.EntityFrameworkCore/4.5.0": {
         "dependencies": {
-          "Abp.EntityFramework.Common": "4.3.0",
+          "Abp.EntityFramework.Common": "4.5.0",
           "Microsoft.EntityFrameworkCore": "2.2.1",
           "Microsoft.EntityFrameworkCore.Relational": "2.2.1"
         },
         "runtime": {
           "lib/netstandard2.0/Abp.EntityFrameworkCore.dll": {
-            "assemblyVersion": "4.3.0.0",
-            "fileVersion": "4.3.0.0"
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.5.0.0"
           }
         }
       },
@@ -274,14 +274,14 @@
           }
         }
       },
-      "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.0": {
+      "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.4": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.2.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {
             "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.18315"
+            "fileVersion": "2.2.0.19081"
           }
         }
       },
@@ -1092,8 +1092,8 @@
       },
       "BoilerplateZadatak.Core/1.0.0": {
         "dependencies": {
-          "Abp": "4.3.0",
-          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.2.0",
+          "Abp": "4.5.0",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.2.4",
           "Microsoft.Extensions.Configuration.Json": "2.2.0"
         },
         "runtime": {
@@ -1108,33 +1108,33 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Abp/4.3.0": {
+    "Abp/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LJi7zoY/BMAwpcW1gqv48uoDyGN6aNlvBx5T3xseGNlxBQYHKPhd5jsx7B3gRuAvMbey3mAh2PBdIRwoGa94CA==",
-      "path": "abp/4.3.0",
-      "hashPath": "abp.4.3.0.nupkg.sha512"
+      "sha512": "sha512-PV7dolASntgS+PA+ow4adbNjY9zFYCJ+1YVlgeLwLjths5wLD0mdCa2+rnN0xAyYo2DEWNuOnNMEcPemTx/82Q==",
+      "path": "abp/4.5.0",
+      "hashPath": "abp.4.5.0.nupkg.sha512"
     },
-    "Abp.AutoMapper/4.3.0": {
+    "Abp.AutoMapper/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-s0GsmyiZfWWRLAxzyQ0yhxGWaG4DmMItJ0tKagVk2Uh+Ift4xwCbeUkXH1qHx/TBd4FVat8Vr9+L04P4AiWhTg==",
-      "path": "abp.automapper/4.3.0",
-      "hashPath": "abp.automapper.4.3.0.nupkg.sha512"
+      "sha512": "sha512-ENCuSjBtxTMgStSxxl/J1VJoBBzRXrc4pTH6gkD9iNnwVOwhMNXAshPJ3lSb8hp5rKddW/E0S4lZHfAOFZgakQ==",
+      "path": "abp.automapper/4.5.0",
+      "hashPath": "abp.automapper.4.5.0.nupkg.sha512"
     },
-    "Abp.EntityFramework.Common/4.3.0": {
+    "Abp.EntityFramework.Common/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XOun9ycwQ0Rvp+b4PBZC+kGXJh/5jjMNJ+AHRmyR0wxiRw5HDKzSjYB57JQM4LkpM/PNwYcl6FSZzH3CpeQYeg==",
-      "path": "abp.entityframework.common/4.3.0",
-      "hashPath": "abp.entityframework.common.4.3.0.nupkg.sha512"
+      "sha512": "sha512-43J7wY8FkD6E3bR1E5yL9tI1AzmNWcmLr5L+W8ybCsjG40kkk5p8mK1s1iI3bPnIK+hGayI4CaELPN6gAwfouw==",
+      "path": "abp.entityframework.common/4.5.0",
+      "hashPath": "abp.entityframework.common.4.5.0.nupkg.sha512"
     },
-    "Abp.EntityFrameworkCore/4.3.0": {
+    "Abp.EntityFrameworkCore/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-I2slP0mhcn6tX63tO8bEI2RWPq/5AqGJnxlKALddkNeYNb9R0K0ccPMTJTorXbBDsoE6Ojmaaj32xsUfkyXptA==",
-      "path": "abp.entityframeworkcore/4.3.0",
-      "hashPath": "abp.entityframeworkcore.4.3.0.nupkg.sha512"
+      "sha512": "sha512-CWMQTv//VLKnnf4cEnP/g1oGmTFs39chhL6zpnoK5YZXX+u3swalGXQPOyjF5ZmDh1TkMG54H+gy6S+GraChJQ==",
+      "path": "abp.entityframeworkcore/4.5.0",
+      "hashPath": "abp.entityframeworkcore.4.5.0.nupkg.sha512"
     },
     "AutoMapper/8.0.0": {
       "type": "package",
@@ -1255,12 +1255,12 @@
       "path": "microsoft.extensions.configuration.binder/2.2.0",
       "hashPath": "microsoft.extensions.configuration.binder.2.2.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.0": {
+    "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gIqt9PkKO01hZ0zmHnWrZ1E45MDreZTVoyDbL1kMWKtDgxxWTJpYtESTEcgpvR1uB1iex1zKGYzJpOMgmuP5TQ==",
-      "path": "microsoft.extensions.configuration.environmentvariables/2.2.0",
-      "hashPath": "microsoft.extensions.configuration.environmentvariables.2.2.0.nupkg.sha512"
+      "sha512": "sha512-Os7uRhp9xwawY5w2tgXw/86YrmAJZl6aHiQVdS9boWybTWPkJOvXXrQ3AGwuldN1W/r+cfnwRe2ePGeFO4zlzg==",
+      "path": "microsoft.extensions.configuration.environmentvariables/2.2.4",
+      "hashPath": "microsoft.extensions.configuration.environmentvariables.2.2.4.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration.FileExtensions/2.2.0": {
       "type": "package",

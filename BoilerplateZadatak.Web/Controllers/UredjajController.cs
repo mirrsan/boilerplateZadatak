@@ -1,11 +1,13 @@
-﻿using BoilerplateZadatak.AppService.Dto;
+﻿using System.Runtime.InteropServices.ComTypes;
+using BoilerplateZadatak.AppService.Dto;
 using BoilerplateZadatak.AppService.IAppService;
+using BoilerplateZadatak.Web.Dto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BoilerplateZadatak.Web.Controllers
 {
-    [Route("api/[controller]/[action]")]
-    public class UredjajController : Controller
+    public class UredjajController : BoilerplateZadatakControllerBase
     {
         private readonly IUredjajService _uredjajService;
 
@@ -14,15 +16,10 @@ namespace BoilerplateZadatak.Web.Controllers
             _uredjajService = uredjajService;
         }
 
-        /// <summary>
-        /// vraca sve uredjaje
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        public IActionResult SviUredjaji()
+        public IActionResult Index()
         {
-            var svi = _uredjajService.DajSveEntitete();
-            return Ok(svi);
+            var model = new UredjajModelDto(_uredjajService);
+            return View(model);
         }
 
         /// <summary>
@@ -30,11 +27,16 @@ namespace BoilerplateZadatak.Web.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpGet("{id}")]
+        [HttpGet]
         public IActionResult UredjajPoId(int id)
         {
             var osoba = _uredjajService.EntitetPoId(id);
-            return Ok(osoba);
+            return View(osoba);
+        }
+        
+        public IActionResult NoviUredjaj()
+        {
+            return View();
         }
 
         /// <summary>
@@ -45,8 +47,13 @@ namespace BoilerplateZadatak.Web.Controllers
         [HttpPost]
         public IActionResult NoviUredjaj(UredjajDto noviUredjaj)
         {
-            int id = _uredjajService.DodajEntitet(noviUredjaj);
-            return Ok($"Id od'{noviUredjaj.Naziv}' je {id}.");
+            _uredjajService.DodajEntitet(noviUredjaj);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult IzmenaInfoUredjaj()
+        {
+            return View();
         }
 
         /// <summary>
@@ -55,11 +62,16 @@ namespace BoilerplateZadatak.Web.Controllers
         /// <param name="id"></param>
         /// <param name="noviInfo"></param>
         /// <returns></returns>
-        [HttpPut]
+        [HttpPost]
         public IActionResult IzmenaInfoUredjaj(UredjajDto noviInfo)
         {
             _uredjajService.IzmeniEntitet(noviInfo);
-            return Ok("Uspesno izmenjeno.");
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult ObrisiUredjaj()
+        {
+            return View();
         }
 
         /// <summary>
@@ -67,11 +79,11 @@ namespace BoilerplateZadatak.Web.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpDelete("{id}:int")]
+        [HttpPost]
         public IActionResult ObrisiUredjaj(int id)
         {
             _uredjajService.ObrisiEntitet(id);
-            return Ok("Uspesno izbrisano");
+            return RedirectToAction("Index");
         }
     }
 }

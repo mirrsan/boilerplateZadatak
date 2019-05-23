@@ -1,0 +1,16 @@
+﻿@model BoilerplateZadatak.Web.Dto.KancelarijaModelDto
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3>Kancelarija</h3>
+
+<hr/>
+
+@foreach (var kk in @Model.Kancelarije)
+{
+    <h5>@kk.Opis</h5>
+    @Html.ActionLink("Obrisi ", "ObrisiKancelariju", new{Id = kk.Id})
+    @Html.ActionLink(" Izmeni ", "IzmeniInfoKancelarije", new {Id = kk.Id})
+    @Html.ActionLink(" Detalji", "KancelarijaPoId", new {Id = kk.Id})
+}

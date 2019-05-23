@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "Abp/4.3.0": {
+      "Abp/4.5.0": {
         "type": "package",
         "dependencies": {
           "Castle.Core": "4.3.1",
@@ -32,10 +32,10 @@
           "lib/netstandard2.0/Abp.dll": {}
         }
       },
-      "Abp.AutoMapper/4.3.0": {
+      "Abp.AutoMapper/4.5.0": {
         "type": "package",
         "dependencies": {
-          "Abp": "4.3.0",
+          "Abp": "4.5.0",
           "AutoMapper": "8.0.0",
           "AutoMapper.Collection": "5.0.0"
         },
@@ -46,10 +46,10 @@
           "lib/netstandard2.0/Abp.AutoMapper.dll": {}
         }
       },
-      "Abp.EntityFramework.Common/4.3.0": {
+      "Abp.EntityFramework.Common/4.5.0": {
         "type": "package",
         "dependencies": {
-          "Abp": "4.3.0"
+          "Abp": "4.5.0"
         },
         "compile": {
           "lib/netstandard2.0/Abp.EntityFramework.Common.dll": {}
@@ -58,10 +58,10 @@
           "lib/netstandard2.0/Abp.EntityFramework.Common.dll": {}
         }
       },
-      "Abp.EntityFrameworkCore/4.3.0": {
+      "Abp.EntityFrameworkCore/4.5.0": {
         "type": "package",
         "dependencies": {
-          "Abp.EntityFramework.Common": "4.3.0",
+          "Abp.EntityFramework.Common": "4.5.0",
           "Microsoft.EntityFrameworkCore": "2.2.1",
           "Microsoft.EntityFrameworkCore.Relational": "2.2.1"
         },
@@ -292,7 +292,7 @@
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
         }
       },
-      "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.0": {
+      "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.2.0"
@@ -1736,8 +1736,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "Abp": "4.3.0",
-          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.2.0",
+          "Abp": "4.5.0",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.2.4",
           "Microsoft.Extensions.Configuration.Json": "2.2.0"
         },
         "compile": {
@@ -1750,56 +1750,56 @@
     }
   },
   "libraries": {
-    "Abp/4.3.0": {
-      "sha512": "LJi7zoY/BMAwpcW1gqv48uoDyGN6aNlvBx5T3xseGNlxBQYHKPhd5jsx7B3gRuAvMbey3mAh2PBdIRwoGa94CA==",
+    "Abp/4.5.0": {
+      "sha512": "PV7dolASntgS+PA+ow4adbNjY9zFYCJ+1YVlgeLwLjths5wLD0mdCa2+rnN0xAyYo2DEWNuOnNMEcPemTx/82Q==",
       "type": "package",
-      "path": "abp/4.3.0",
+      "path": "abp/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "abp.4.3.0.nupkg.sha512",
+        "abp.4.5.0.nupkg.sha512",
         "abp.nuspec",
         "lib/netstandard2.0/Abp.dll",
         "lib/netstandard2.0/Abp.pdb",
         "lib/netstandard2.0/Abp.xml"
       ]
     },
-    "Abp.AutoMapper/4.3.0": {
-      "sha512": "s0GsmyiZfWWRLAxzyQ0yhxGWaG4DmMItJ0tKagVk2Uh+Ift4xwCbeUkXH1qHx/TBd4FVat8Vr9+L04P4AiWhTg==",
+    "Abp.AutoMapper/4.5.0": {
+      "sha512": "ENCuSjBtxTMgStSxxl/J1VJoBBzRXrc4pTH6gkD9iNnwVOwhMNXAshPJ3lSb8hp5rKddW/E0S4lZHfAOFZgakQ==",
       "type": "package",
-      "path": "abp.automapper/4.3.0",
+      "path": "abp.automapper/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "abp.automapper.4.3.0.nupkg.sha512",
+        "abp.automapper.4.5.0.nupkg.sha512",
         "abp.automapper.nuspec",
         "lib/netstandard2.0/Abp.AutoMapper.dll",
         "lib/netstandard2.0/Abp.AutoMapper.pdb",
         "lib/netstandard2.0/Abp.AutoMapper.xml"
       ]
     },
-    "Abp.EntityFramework.Common/4.3.0": {
-      "sha512": "XOun9ycwQ0Rvp+b4PBZC+kGXJh/5jjMNJ+AHRmyR0wxiRw5HDKzSjYB57JQM4LkpM/PNwYcl6FSZzH3CpeQYeg==",
+    "Abp.EntityFramework.Common/4.5.0": {
+      "sha512": "43J7wY8FkD6E3bR1E5yL9tI1AzmNWcmLr5L+W8ybCsjG40kkk5p8mK1s1iI3bPnIK+hGayI4CaELPN6gAwfouw==",
       "type": "package",
-      "path": "abp.entityframework.common/4.3.0",
+      "path": "abp.entityframework.common/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "abp.entityframework.common.4.3.0.nupkg.sha512",
+        "abp.entityframework.common.4.5.0.nupkg.sha512",
         "abp.entityframework.common.nuspec",
         "lib/netstandard2.0/Abp.EntityFramework.Common.dll",
         "lib/netstandard2.0/Abp.EntityFramework.Common.pdb",
         "lib/netstandard2.0/Abp.EntityFramework.Common.xml"
       ]
     },
-    "Abp.EntityFrameworkCore/4.3.0": {
-      "sha512": "I2slP0mhcn6tX63tO8bEI2RWPq/5AqGJnxlKALddkNeYNb9R0K0ccPMTJTorXbBDsoE6Ojmaaj32xsUfkyXptA==",
+    "Abp.EntityFrameworkCore/4.5.0": {
+      "sha512": "CWMQTv//VLKnnf4cEnP/g1oGmTFs39chhL6zpnoK5YZXX+u3swalGXQPOyjF5ZmDh1TkMG54H+gy6S+GraChJQ==",
       "type": "package",
-      "path": "abp.entityframeworkcore/4.3.0",
+      "path": "abp.entityframeworkcore/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "abp.entityframeworkcore.4.3.0.nupkg.sha512",
+        "abp.entityframeworkcore.4.5.0.nupkg.sha512",
         "abp.entityframeworkcore.nuspec",
         "lib/netstandard2.0/Abp.EntityFrameworkCore.dll",
         "lib/netstandard2.0/Abp.EntityFrameworkCore.pdb",
@@ -2115,16 +2115,16 @@
         "microsoft.extensions.configuration.binder.nuspec"
       ]
     },
-    "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.0": {
-      "sha512": "gIqt9PkKO01hZ0zmHnWrZ1E45MDreZTVoyDbL1kMWKtDgxxWTJpYtESTEcgpvR1uB1iex1zKGYzJpOMgmuP5TQ==",
+    "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.4": {
+      "sha512": "Os7uRhp9xwawY5w2tgXw/86YrmAJZl6aHiQVdS9boWybTWPkJOvXXrQ3AGwuldN1W/r+cfnwRe2ePGeFO4zlzg==",
       "type": "package",
-      "path": "microsoft.extensions.configuration.environmentvariables/2.2.0",
+      "path": "microsoft.extensions.configuration.environmentvariables/2.2.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.xml",
-        "microsoft.extensions.configuration.environmentvariables.2.2.0.nupkg.sha512",
+        "microsoft.extensions.configuration.environmentvariables.2.2.4.nupkg.sha512",
         "microsoft.extensions.configuration.environmentvariables.nuspec"
       ]
     },
@@ -6230,8 +6230,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Abp.AutoMapper >= 4.3.0",
-      "Abp.EntityFrameworkCore >= 4.3.0",
+      "Abp.AutoMapper >= 4.5.0",
+      "Abp.EntityFrameworkCore >= 4.5.0",
       "BoilerplateZadatak.Core >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
@@ -6283,11 +6283,11 @@
         "dependencies": {
           "Abp.AutoMapper": {
             "target": "Package",
-            "version": "[4.3.0, )"
+            "version": "[4.5.0, )"
           },
           "Abp.EntityFrameworkCore": {
             "target": "Package",
-            "version": "[4.3.0, )"
+            "version": "[4.5.0, )"
           },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",

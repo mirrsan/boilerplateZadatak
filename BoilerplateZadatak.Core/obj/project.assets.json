@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "Abp/4.3.0": {
+      "Abp/4.5.0": {
         "type": "package",
         "dependencies": {
           "Castle.Core": "4.3.1",
@@ -161,7 +161,7 @@
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.0": {
+      "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.2.0"
@@ -1528,14 +1528,14 @@
     }
   },
   "libraries": {
-    "Abp/4.3.0": {
-      "sha512": "LJi7zoY/BMAwpcW1gqv48uoDyGN6aNlvBx5T3xseGNlxBQYHKPhd5jsx7B3gRuAvMbey3mAh2PBdIRwoGa94CA==",
+    "Abp/4.5.0": {
+      "sha512": "PV7dolASntgS+PA+ow4adbNjY9zFYCJ+1YVlgeLwLjths5wLD0mdCa2+rnN0xAyYo2DEWNuOnNMEcPemTx/82Q==",
       "type": "package",
-      "path": "abp/4.3.0",
+      "path": "abp/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "abp.4.3.0.nupkg.sha512",
+        "abp.4.5.0.nupkg.sha512",
         "abp.nuspec",
         "lib/netstandard2.0/Abp.dll",
         "lib/netstandard2.0/Abp.pdb",
@@ -1689,16 +1689,16 @@
         "microsoft.extensions.configuration.abstractions.nuspec"
       ]
     },
-    "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.0": {
-      "sha512": "gIqt9PkKO01hZ0zmHnWrZ1E45MDreZTVoyDbL1kMWKtDgxxWTJpYtESTEcgpvR1uB1iex1zKGYzJpOMgmuP5TQ==",
+    "Microsoft.Extensions.Configuration.EnvironmentVariables/2.2.4": {
+      "sha512": "Os7uRhp9xwawY5w2tgXw/86YrmAJZl6aHiQVdS9boWybTWPkJOvXXrQ3AGwuldN1W/r+cfnwRe2ePGeFO4zlzg==",
       "type": "package",
-      "path": "microsoft.extensions.configuration.environmentvariables/2.2.0",
+      "path": "microsoft.extensions.configuration.environmentvariables/2.2.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.xml",
-        "microsoft.extensions.configuration.environmentvariables.2.2.0.nupkg.sha512",
+        "microsoft.extensions.configuration.environmentvariables.2.2.4.nupkg.sha512",
         "microsoft.extensions.configuration.environmentvariables.nuspec"
       ]
     },
@@ -5689,8 +5689,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Abp >= 4.3.0",
-      "Microsoft.Extensions.Configuration.EnvironmentVariables >= 2.2.0",
+      "Abp >= 4.5.0",
+      "Microsoft.Extensions.Configuration.EnvironmentVariables >= 2.2.4",
       "Microsoft.Extensions.Configuration.Json >= 2.2.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
@@ -5738,11 +5738,11 @@
         "dependencies": {
           "Abp": {
             "target": "Package",
-            "version": "[4.3.0, )"
+            "version": "[4.5.0, )"
           },
           "Microsoft.Extensions.Configuration.EnvironmentVariables": {
             "target": "Package",
-            "version": "[2.2.0, )"
+            "version": "[2.2.4, )"
           },
           "Microsoft.Extensions.Configuration.Json": {
             "target": "Package",

@@ -1,0 +1,17 @@
+﻿@model BoilerplateZadatak.Web.Dto.UredjajModelDto
+@{
+    ViewData["Title"] = "Index";
+    ViewBag.ActiveMenu = "Uredjaj";
+}
+
+<h2>Uredjaj</h2>
+
+<hr/>
+
+@foreach (var evo in Model.Uredjaj)
+{
+    <h5>@evo.Naziv</h5>
+    @Html.ActionLink("Obrisi ", "ObrisiUredjaj", new {Id = evo.Id})
+    @Html.ActionLink(" Izmeni ", "IzmenaInfoUredjaj", new {Id = evo.Id})
+    @Html.ActionLink(" Detalji", "UredjajPoId", new {Id = evo.Id})
+}

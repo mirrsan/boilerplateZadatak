@@ -1,0 +1,18 @@
+﻿@model BoilerplateZadatak.Web.Dto.OsobaUredjajModelDto
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3>Osoba-Uredjaj i vreme koriscenja</h3>
+
+<hr/>
+
+@foreach (var ou in Model.OsobaUredjaj)
+{
+    <h5>Ime:@ou.Osoba.Ime <br/>Prezime:@ou.Osoba.Prezime <br/>Kancelarija:@ou.Osoba.Kancelarija.Opis</h5>
+    <h5>Uredjaj:@ou.Uredjaj.Naziv </h5>
+    <h5>Od:@ou.PocetakKoriscenja <br/>Do:@ou.KrajKoriscenja</h5>
+    @Html.ActionLink("Obrisi ", "ObrisiOU", new {Id = ou.Id})
+    @Html.ActionLink(" Izmeni ", "IzmenaInfoOU", new {Id = ou.Id})
+    @Html.ActionLink(" Detalji", "OuPoId", new {Id = ou.Id})
+}
